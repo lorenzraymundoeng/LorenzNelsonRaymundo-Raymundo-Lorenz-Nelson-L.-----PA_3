@@ -1,26 +1,36 @@
-# Programming Assignment 2
+# Programming Assignment 3 | Raymundo, Lorenz Nelson L.
+#### This is my submission for PA3 (Experiment 3 | Python Data Analysis)
+This repository contains a  two Jupyter Notebooks (`Raymundo_Pandas-P1.ipynb` & `Raymundo_Pandas-P2.ipynb`) that demonstrates two programming exercises using the **Pandas** library.
 
-This repository contains a Jupyter Notebook (`Raymundo_Pandas-P1.ipynb` & `Raymundo_Pandas-P2.ipynb`) that demonstrates two programming exercises using the **PANDAS** library.
+Before we proceed, remember to import the pandas library to your notebook. This is a very important step because it will let you access all PANDAS functions.
+```Python
+import pandas as pd
+```
 
-# Cars Dataset Analysis with Pandas
+#### Part 1: Cars Dataset Analysis with Pandas
+The first exercise in this programming assignment shows how to load a .csv file into a dataframe named cars and then display the first and last five rows of the dataframe.\
+To do this, we must first download the .csv file and save it to the same directory as your notebook. 
 
-## Overview
-This project demonstrates how to use **pandas** in Python to explore and analyze a dataset of cars.  
-It is divided into two Jupyter Notebooks:
+Download `cars.csv`
 
-## Exercise 1:
+After that, we can now load it into our notebook by typing:
+```Python
+# To load the .csv file,
+cars = pd.read_csv('cars.csv')
+# To display the entire dataframe,
+cars
+```
+In order to display the first five rows of the dataframe, we use the .head() function. 
+```Python
+cars.head()
+```
+And to display the last five rows of the dataframe, we use the .tail() function.
+```Python
+cars.tail()
+```
 
-  Introduces pandas basics:
-  - Reading CSV files into DataFrames
-  - Displaying datasets
-  - Previewing data with `.head()` and `.tail()`
-
-## Exercise 2:
-
- Focuses on data selection and filtering:
-  - Selecting specific rows and columns using `iloc` and `loc`
-  - Filtering rows by conditions
-  - Extracting subsets of data (odd columns, specific indices, models)
+#### Part 2: Extracting information using Subsetting, Slicing, and Indexing Operations
+The second exercise in this programming assignment shows how to load
 
 ## Together, these notebooks provide a foundation for working with real-world datasets using pandas.
 
