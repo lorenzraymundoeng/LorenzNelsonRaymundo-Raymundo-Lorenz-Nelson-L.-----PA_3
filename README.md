@@ -1,6 +1,6 @@
 # Programming Assignment 3 | Raymundo, Lorenz Nelson L.
 #### This is my submission for PA3 (Experiment 3 | Python Data Analysis)
-This repository contains a  two Jupyter Notebooks (`Raymundo_Pandas-P1.ipynb` & `Raymundo_Pandas-P2.ipynb`) that demonstrates two programming exercises using the **Pandas** library.
+This repository contains two Jupyter Notebooks (`Raymundo_Pandas-P1.ipynb` & `Raymundo_Pandas-P2.ipynb`) that demonstrate two programming exercises using the **Pandas** library.
 
 Before we proceed, remember to import the pandas library to your notebook. This is a very important step because it will let you access all PANDAS functions.
 ```Python
@@ -30,9 +30,9 @@ cars.tail()
 ```
 
 #### Part 2: Extracting information using Subsetting, Slicing, and Indexing Operations
-The second exercise in this programming assignment shows how extract information from the previous dataframe using `Subsetting`, `Slicing`, and `Indexing`\
+The second exercise in this programming assignment shows how to extract information from the previous dataframe using `Subsetting`, `Slicing`, and `Indexing`\
 For task 2a, we must display the first five rows with odd-numbered columns.\
-To do this, we can use integer-location based indexing or iloc
+To do this, we can use integer-location-based indexing or iloc
 ```Python
 # Select all odd-numbered columns using iloc with step = 2 starting from index 1
 odd = cars.iloc[:, 1::2] # ':' means select all rows, '1' is the starting index, and '::2' means step by 2.
@@ -58,7 +58,7 @@ cars.loc[cars['Model'] == 'Camaro Z28' , ['Model', 'cyl]]
 For task 2d, we are asked to determine how many cylinders and what gear type do the car models ‘Mazda RX4 Wag’, ‘Ford Pantera L’ and ‘Honda Civic’ have.
 To do this, we can also use .loc
 ```Python
-# We can see from the dataframe that the `Mazda RX4 Wag` is at index 1; `Ford Pantera L` is at index 28; `Honda Civic` is at index 18,
+# We can see from the dataframe that the 'Mazda RX4 Wag' is at index 1; 'Ford Pantera L' is at index 28; 'Honda Civic' is at index 18,
 cars.loc[[1,28,18],['Model', 'cyl', 'gear']]
 ```
 
